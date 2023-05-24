@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang = "ko">
+        <head>
+        <meta charset="UTF-8" />
+        <title>KOREA Tourist Attractions</title>
+        <link rel="stylesheet" href="static/bootstrap.css">   
+ 
+    </head>
+    <body>
+      <form method = "post"> 
+            <h4 class="card-text"> 테마 : {{ thema }}</h4>
+            <h4 class="card-text"> 코스이름 : {{ courseName }}</h4>
+            <h4 class="card-text"> 위치 : {{ spotAreaName }}</h4>
+            <h4 class="card-text"> 장소 : {{ spotName }}</h4>
+            <h4 class="card-text"> 날짜 : {{ tm }}</h4>
+            <h4 class="card-text"> 평균기온 : {{ th3 }}&deg;C</h4>
+            <h4 class="card-text"> 하늘상태 : {{ sky_text }}</h4>
+            <h4 class="card-text"> 강수확률 : {{ pop }}&#37; </h4>
+            <h4 class="card-text"> 습도 : {{ rhm }}&#37;</h4>
+      </form>         
+    </body>
+</html>

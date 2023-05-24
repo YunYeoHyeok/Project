@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>지도</title>
+    <link rel="stylesheet" href="static/style2.css">  
+  </head>
+  <body>
+    <form onsubmit="showMap(); return false;">
+     <p class = "star"> 출발지: <input type="text" id="origin"><br>
+      도착지: <input type="text" id="destination"><br> 
+      <button type="submit">지도 보기</button></p>
+    </form>
+    <div id="map" style="height: 400px; width: 300px;" class = "maps" ></div>
+    <script>
+      function showMap() {
+        var origin = document.getElementById('origin').value;
+        var destination = document.getElementById('destination').value;
+
+        var url = "https://www.google.com/maps/embed/v1/directions?key=AIzaSyBldLf080UvMdR1Sxb9vDgrJuIEZ1vd5VE";
+        url += "&origin=" + encodeURIComponent(origin);
+        url += "&destination=" + encodeURIComponent(destination);
+        url += "&mode=driving";
+
+        document.getElementById('map').innerHTML = '<iframe width="100%" height="100%"  frameborder="0" style="border:0" src="' + url + '"></iframe>';
+      }
+    </script>
+  </body>
+</html>

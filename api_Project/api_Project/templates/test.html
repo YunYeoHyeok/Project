@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Google Maps API 예제</title>
+    <style>
+      /* 지도를 표시할 div 요소의 크기를 설정합니다. */
+      #map {
+        height: 500px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>지역명으로 위치 검색하기</h1>
+    <form>
+      <label for="location">지역명:</label>
+      <input type="text" id="location" name="location">
+      <button type="button" onclick="searchLocation()">검색</button>
+    </form>
+    <!-- 지도를 표시할 div 요소입니다. -->
+    <div id="map"></div>
+    <!-- 구글 지도 API를 호출하는 스크립트입니다. -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBldLf080UvMdR1Sxb9vDgrJuIEZ1vd5VE"></script>
+    <script>
+      function searchLocation() {
+        // 사용자가 입력한 지역명을 가져옵니다.
+        var location = document.getElementById("location").value;
+        // Geocoder 객체를 생성합니다.
+        var geocoder = new google.maps.Geocoder();
+        // 지오코딩 요청을 보냅니다.
+        geocoder.geocode({ address: location }, function(results, status) {
+          // 요청 결과를 확인합니다.
+          if (status === google.maps.GeocoderStatus.OK) {
+            // 지도를 생성합니다.
+            var map = new google.maps.Map(document.getElementById("map"), {
+              center: results[0].geometry.location,
+              zoom: 12
+            });
+            // 마커를 생성합니다.
+            var marker = new google.maps.Marker({
+              position: results[0].geometry.location,
+              map: map,
+              title: location
+            });
+          } else {
+            alert("지오코딩 요청에 실패하였습니다.");
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

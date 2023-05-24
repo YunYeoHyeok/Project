@@ -1,0 +1,204 @@
+@font-face {
+    src: url("fonts/BMJUA_ttf.ttf");
+    font-family: "jua";
+}
+
+#map {
+    transform: translate(120%, 50%);
+    height: 450px;
+    width: 40%;
+}
+
+.search-container {
+    /* 지역 */
+    position: absolute;
+    padding: 20px;
+    width: 250px;
+    background-color: #EEEFF1;
+    border-radius: 5px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-310%, 270%);
+}
+
+.search-container2 {
+    /* 날짜 */
+    position: absolute;
+    padding: 20px;
+    width: 250px;
+    background-color: #EEEFF1;
+    border-radius: 5px;
+    top: 47%;
+    left: 50%;
+    transform: translate(-310%, 350%);
+}
+
+.search-container3 {
+    /* 검색창 */
+    position: absolute;
+    background-color: #EEEFF1;
+    padding: 40px;
+    width: 150px;
+    border-radius: 5px;
+    top: 43.5%;
+    left: 60%;
+    transform: translate(-500%, 160%);
+}
+
+.slider {
+    position: relative;
+    height: 300px;
+    /* 이미지의 높이에 맞게 설정 */
+    overflow: hidden;
+    /* 이미지가 넘칠 경우 보이지 않게 설정 */
+}
+
+.slider img {
+    position: absolute;
+    padding: 40px;
+    top: 50%;
+    border-radius: 80px;
+    /* 이미지를 수직 중앙에 위치시키기 위해 50%로 설정 */
+    left: 50%;
+    /* 이미지를 수평 중앙에 위치시키기 위해 50%로 설정 */
+    transform: translate(-150%, 75%);
+    /* 이미지의 위치를 조정 */
+    width: 30%;
+    max-width: 100%;
+    /* 이미지의 최대 너비를 지워줍니다. */
+    max-height: 100%;
+    /* 이미지의 최대 높이를 지워줍니다. */
+}
+
+.logo {
+    text-decoration-line: none;
+    font-size: 50px;
+    transform: translate(45%, -10%)
+}
+
+nav ul {
+    background-color: thistle;
+    text-align: center;
+    border-style: solid;
+    border-color: rgb(23, 24, 21);
+    border-width: 2px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+/* 결과창 */
+.result {
+    font-size: 30px;
+    transform: translate(10%, 180%)
+}
+
+.result2 {
+    font-size: 30px;
+    transform: translate(10%, 200%)
+}
+
+.v-line {
+    border-left: thick solid #000;
+    height: 220%;
+    left: 35%;
+    position: absolute;
+}
+
+.maps {
+    position: absolute;
+    transform: translate(0, 0);
+}
+
+.texts {
+    position: absolute;
+    transform: translate(600%, -850%);
+}
+
+.main-search-container {
+    /* 지역 */
+    position: absolute;
+    padding: 30px;
+    width: 250px;
+    background-color: #fafcff;
+    border-radius: 5px;
+    transform: translate(68%, 130%);
+    font-style: black;
+}
+
+.main-search-container2 {
+    /* 날짜 */
+    position: absolute;
+    padding: 30px;
+    width: 250px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transform: translate(68%, 250%);
+    font-style: black;
+}
+
+.main-search-container3 {
+    /* 검색창 */
+    position: absolute;
+    background-color: #080808;
+    padding: 30px;
+    width: 250px;
+    border-radius: 5px;
+    transform: translate(95%, 370%);
+}
+
+.slider {
+    position: relative;
+    height: 300px;
+    /* 이미지의 높이에 맞게 설정 */
+    overflow: hidden;
+    /* 이미지가 넘칠 경우 보이지 않게 설정 */
+}
+
+/* 첫번째 페이지 */
+.main-slider img {
+    position: absolute;
+    padding: 45px;
+    border-radius: 75px;
+    /* 이미지를 수평 중앙에 위치시키기 위해 50%로 설정 */
+    transform: translate(100%, -5%);
+    /* 이미지의 위치를 조정 */
+    width: 40%;
+    height: 70%;
+    max-width: 100%;
+    /* 이미지의 최대 너비를 지워줍니다. */
+    max-height: 100%;
+    /* 이미지의 최대 높이를 지워줍니다. */
+}
+
+a {
+    text-decoration-line: none;
+}
+
+body {
+    background-color: #FFF0F5;
+}
+
+
+/* index 어디로갈까? */
+.sub {
+    transform: translate(11%, 290%);
+    font-size: 30px;
+}
+
+head {
+    font-family: "jua";
+}
+
+/* index 우리 */
+.sub1 {
+    transform: translate(11%, 310%);
+    font-size: 30px;
+}

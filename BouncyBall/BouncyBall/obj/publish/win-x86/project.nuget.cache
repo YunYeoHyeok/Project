@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "nm3SdFXLI2EGfWA7NKbv9bXXevgkjOdtbH9ifY7D8o1SsnU9KHM4yR+OVX4Jm5N1yMRgkipyHgkcq02+cip+gA==",
+  "success": true,
+  "projectFilePath": "C:\\PJH\\CS\\project\\BouncyBall\\BouncyBall.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wlgud\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.13\\microsoft.netcore.app.runtime.win-x86.6.0.13.nupkg.sha512",
+    "C:\\Users\\wlgud\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\6.0.13\\microsoft.windowsdesktop.app.runtime.win-x86.6.0.13.nupkg.sha512",
+    "C:\\Users\\wlgud\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.13\\microsoft.aspnetcore.app.runtime.win-x86.6.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

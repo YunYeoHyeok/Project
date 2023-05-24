@@ -1,0 +1,39 @@
+label {
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+#map {
+    transform: translate(240%, 30%);
+    height: 100%;
+    width: 100%;
+}
+
+.star {
+    transform: translate(40%, -10%);
+}
+
+#img {
+    height: 50%;
+    width: 50%;
+}

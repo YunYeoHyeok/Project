@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>KOREA Tourist Attractions</title>
+        <link rel="stylesheet" href="static/style.css">   
+        <script>
+            var imgArray = new Array();
+            imgArray[0] = "https://img.freepik.com/free-photo/gyeongbokgung-palace-with-cherry-blossom-in-spring-south-korea_335224-379.jpg?w=1380&t=st=1679449877~exp=1679450477~hmac=66dbbb4d07f37d4c7cb6f14806252618627da2c6fc093bfc6dc87ffe54e3b559";
+            imgArray[1] = "https://img.freepik.com/free-photo/geyongbokgung-palace-and-car-light-at-sunset-in-seoul-south-korea_335224-271.jpg?w=1380&t=st=1679449909~exp=1679450509~hmac=8e80580b8594222be3caae536941713ead048792f4cce61e56af59598b359b39";
+            imgArray[2] = "https://img.freepik.com/free-photo/hwaseong-fortress-and-car-light-in-suwon-korea_335224-547.jpg?w=1380&t=st=1679449941~exp=1679450541~hmac=79f0faa2632587d89879aafac2bd8ca5a2932c856e8b39697a846ac1d950f81b";     
+            function showImage() {
+                var imgNum = Math.round(Math.random()*2);
+                var objImg = document.getElementById("introImg"); /*태그에 있는 id 속성을 사용하여 해당 태그에 접근하여 하고 싶은 작업을 할 때 쓰는 함수*/
+                objImg.src = imgArray[imgNum];
+                setTimeout("showImage()", 3000);
+            }     
+        </script>
+        <p class = 'logo'>&nbsp;</a>
+    </head>
+    <body onload="showImage()" class = "main-slider img" style="overflow-x: hidden" >
+        <form method = "post">     
+            <img id ="introImg" border="0" >
+                <p class = "sub1"> 우리, </p>
+                <p class = "sub" > 언제 어디로 놀러갈까요? </p>           
+                <input type="text" class = "main-search-container" placeholder = "어디로 갈까요 ? " name = "name">
+                <button class = "main-search-container3" style = "color : white">검색하기</button>
+        </div>            
+                <input type="text" class = "main-search-container2" placeholder = "언제 갈까요 ? " name = "data">                          
+        </form>     
+    </body>
+</html>
